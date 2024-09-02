@@ -1,10 +1,63 @@
-List = []
-print("Blank List: ")
-print(List)
-List = [10, 20, 14]
-print("\nList of numbers: ")
-print(List)
-List = ["BATMAN", "A SILENT GUARUDIAN", "A WATHCHFUL PROTECTOR"]
-print("\nList Items: ")
-print(List[0])
-print(List[2])
+# Creating an empty list
+my_list = []
+print("Initial empty list:")
+print(my_list)
+
+# Adding elements to the list using append()
+my_list.append(10)
+my_list.append(20)
+my_list.append(14)
+print("\nList after adding elements using append():")
+print(my_list)
+
+# Inserting an element at a specific position using insert()
+my_list.insert(1, 99)  # Insert 99 at index 1
+print("\nList after inserting 99 at index 1:")
+print(my_list)
+
+# Removing an element from the list using remove()
+my_list.remove(20)  # Remove the first occurrence of 20
+print("\nList after removing 20:")
+print(my_list)
+
+# Sorting the list using sort()
+my_list.sort()
+print("\nList after sorting in ascending order:")
+print(my_list)
+
+# Reversing the list using reverse()
+my_list.reverse()
+print("\nList after reversing the order:")
+print(my_list)
+
+# Finding the length of the list using len()
+list_length = len(my_list)
+print("\nLength of the list:")
+print(list_length)
+
+# Extending the list with another list using extend()
+additional_items = [7, 8, 9]
+my_list.extend(additional_items)
+print("\nList after extending with [7, 8, 9]:")
+print(my_list)
+
+# Creating a list with strings
+string_list = ["BATMAN", "A SILENT GUARDIAN", "A WATCHFUL PROTECTOR"]
+print("\nString list:")
+print(string_list)
+
+# Accessing specific elements in the string list
+print("\nAccessing specific elements in the string list:")
+print("First item in the list:", string_list[0])  # Accessing the first element
+print("Third item in the list:", string_list[2])  # Accessing the third element
+
+# Concatenating two lists using the + operator
+concatenated_list = my_list + string_list
+print("\nConcatenated list of numbers and strings:")
+print(concatenated_list)
+
+# Removing the last element using pop()
+removed_element = my_list.pop()
+print("\nList after removing the last element using pop():")
+print(my_list)
+print("Removed element:", removed_element)
